@@ -7,7 +7,14 @@
 
 #ifndef Elective_hpp
 #define Elective_hpp
+#include "Course.hpp"
 
-#include <stdio.h>
+#include <iostream>
+
+
+class Elective : public Course {
+private:
+    
+};
 
 #endif /* Elective_hpp */
