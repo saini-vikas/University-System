@@ -59,5 +59,5 @@ void Student::add_courses(Course *c){
 
 
 void Student::print(){
-    
+    cout << format("\tName: {}, Age: {}, Program: {}, GPA: {:0.2f}\n", this->name, this->age, this->my_program->get_program_name(), this->GPA);
 }

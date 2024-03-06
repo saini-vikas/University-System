@@ -33,10 +33,23 @@ set<Student *> * University::get_Student(){
 }
 void University::add_program(Program* p){
     this->all_programs->insert(p);
+    
 }
 void University::admit_student(Student* stu){
     this->all_students->insert(stu);
+    if (all_programs->contains(stu->get_program())){
+        Program *p = stu->get_program();
+        p->set_capacity(p->get_capacity() -1);
+    }
 }
 void University::print(){
     std::cout << "University name: " << this->name << " Address: " <<this->address << endl;
+    cout << "Programs: " << this->all_programs->size() << endl;
+    for (const auto& program: *all_programs){
+        program->print();
+    }
+    cout << "Student: " << this->all_students->size() << endl;
+    for (const auto& student: *all_students){
+        student->print();
+    }
 }

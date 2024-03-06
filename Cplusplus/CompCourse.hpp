@@ -8,6 +8,19 @@
 #ifndef CompCourse_hpp
 #define CompCourse_hpp
 
-#include <stdio.h>
+
+#include <iostream>
+#include "Course.hpp"
+#include "Student.hpp"
+
+class CompCourse : public Course {
+public:
+    CompCourse();
+    ~CompCourse();
+    void enroll(Student *s);
+    void print();
+private:
+    
+};
 
 #endif /* CompCourse_hpp */

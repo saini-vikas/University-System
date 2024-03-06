@@ -45,5 +45,6 @@ void Program::add_student(Student *s){
 }
 
 void Program::print(){
+    cout << "\tProgram: " << this->name << ", Code: " << this->program_code << ", Capacity: " << this->capacity << endl;
     
 }

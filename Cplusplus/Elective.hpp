@@ -13,7 +13,11 @@
 
 
 class Elective : public Course {
+public:
+    
 private:
+    bool is_mandatory;
+    
     
 };
 
