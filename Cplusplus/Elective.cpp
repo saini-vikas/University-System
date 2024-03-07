@@ -6,3 +6,8 @@
 //
 
 #include "Elective.hpp"
+
+
+Elective::Elective(string course_code, int level, const string& description, float credit): Course(course_code, level, description, credit){
+    
+}

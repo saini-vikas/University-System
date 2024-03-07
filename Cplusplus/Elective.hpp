@@ -14,9 +14,12 @@
 
 class Elective : public Course {
 public:
+    Elective();
+    Elective(string course_code, int level, const string& description, float credit);
+    ~Elective();
     
 private:
-    bool is_mandatory;
+    
     
     
 };
