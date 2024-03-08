@@ -15,6 +15,9 @@ Student::Student(string name, short age, string id, Program* p){
     this->age = age;
     this->GPA = 0.0f;
     this->student_id = id;
+    this->is_graduated = false;
+    this->current_major_credit = 0.0f;
+    this->current_elective_credit = 0.0f;
     this->my_courses = new set<Course *>;
     this->my_program = p;
 }
@@ -26,7 +29,35 @@ Student::~Student(){
 }
 
 void Student::eligible_to_graduate(){
-    
+    if (this->get_major_credit() >= this->my_program->get_major_credit() && this->get_elective_credit() >= this->my_program->get_elective_credit() && !this->is_graduated){
+        this->is_graduated = true;
+        cout << "Student name: " << this->name << " is eligible to graduate from " << this->my_program->get_program_name() << endl;
+        cout << "Credit Completed: " << this->get_elective_credit() + this->get_major_credit() << endl;
+    }else{
+        cout << "Student name: " << this->name << " is NOT eligible to graduate." << endl;
+        cout << "Major Credit needed: " << this->my_program->get_major_credit() - this->current_major_credit << endl;
+        cout << "Elective Credit needed: " << this->my_program->get_elective_credit() - this->current_elective_credit << endl;
+    }
+}
+
+void Student::update_major_credit(float cre){
+    this->current_major_credit += cre;
+}
+
+void Student::update_elective_credit(float cre){
+    this->current_elective_credit += cre;
+}
+
+float Student::get_major_credit(){
+    return this->current_major_credit;
+}
+
+float Student::get_elective_credit(){
+    return this->current_elective_credit;
+}
+
+float Student::get_total_credit(){
+    return this->current_major_credit + this->current_elective_credit;
 }
 
 string Student::get_name(){

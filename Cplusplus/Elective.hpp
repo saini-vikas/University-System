@@ -17,6 +17,10 @@ public:
     Elective();
     Elective(string course_code, int level, const string& description, float credit);
     ~Elective();
+    virtual bool can_enroll(Student *s);
+    virtual void enroll(Student *s);
+    virtual void print();
+    
     
 private:
     

@@ -24,6 +24,9 @@ public:
     int get_capacity();
     string get_program_name();
     string get_program_code();
+    float get_total_credit_needed();
+    float get_elective_credit();
+    float get_major_credit();
     void set_capacity(int n);
     void add_student(Student *s);
     void print();
@@ -32,7 +35,9 @@ private:
     const string name;
     int capacity;
     const string program_code;
-    float credit_needed;
+    float total_credit_needed;
+    float elective_credit;
+    float major_credit;
     set<Course *> *mandatory_courses;
     set<Student *> *students;
 };

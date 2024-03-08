@@ -11,3 +11,19 @@
 Elective::Elective(string course_code, int level, const string& description, float credit): Course(course_code, level, description, credit){
     
 }
+
+Elective::~Elective(){
+    
+}
+
+
+bool Elective::can_enroll(Student *s){
+    return true;
+}
+void Elective::enroll(Student *s){
+    
+}
+void Elective::print(){
+    
+}
+

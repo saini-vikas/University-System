@@ -33,9 +33,14 @@ public:
     set<Course *>* get_courses();
     void set_gpa(float g);
     void set_age(int age);
+    void update_major_credit(float cre);
+    void update_elective_credit(float cre);
+    float get_total_credit();
     void set_program(Program *p);
     void add_courses(Course *c);
     void eligible_to_graduate();
+    float get_major_credit();
+    float get_elective_credit();
     void print();
     
 private:
@@ -43,6 +48,9 @@ private:
     short age;
     string student_id;
     float GPA;
+    bool is_graduated;
+    float current_major_credit;
+    float current_elective_credit;
     Program *my_program;
     set<Course *> *my_courses;
    

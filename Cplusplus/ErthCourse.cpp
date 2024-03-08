@@ -15,8 +15,8 @@ ErthCourse::ErthCourse(string course_code, int level, const string& description,
 }
     
 ErthCourse::~ErthCourse(){
-    delete pre_requisite;
-    delete associate_program;
+    delete this->pre_requisite;
+    delete this->associate_program;
 }
 
 
