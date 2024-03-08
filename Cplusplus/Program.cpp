@@ -11,6 +11,7 @@
 Program::Program(string name, string program_code):name(name), program_code(program_code){
     this->capacity = 25;
     this->students = new set<Student *>;
+    this->credit_needed = 10;
     this->mandatory_courses = new set<Course *>;
 }
 

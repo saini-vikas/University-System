@@ -10,6 +10,7 @@
 #include "University.hpp"
 #include "Program.hpp"
 #include "Student.hpp"
+#include "CompCourse.hpp"
 
 
 int main(int argc, const char * argv[]) {
@@ -27,6 +28,7 @@ int main(int argc, const char * argv[]) {
     Student *s8 = new Student("Elon Musk", 52, "101169792", earth_science);
     Student *s9 = new Student("Dhruv Rathee", 29, "101169793", health_science);
     Student *s10 = new Student("Ranbir Kapoor", 37, "101169800", earth_science);
+    CompCourse *comp1405 = new CompCourse("Comp1405", 1, "Intro to Computer Science 1", 0.5, computer_science, NULL);
     car->add_program(computer_science);
     car->add_program(health_science);
     car->add_program(earth_science);
@@ -41,6 +43,7 @@ int main(int argc, const char * argv[]) {
     car->admit_student(s9);
     car->admit_student(s10);
     car->print();
+    comp1405->print();
     
     return 0;
 }

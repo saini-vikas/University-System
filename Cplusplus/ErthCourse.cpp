@@ -9,6 +9,25 @@
 
 
 
-ErthCourse::ErthCourse(string course_code, int level, const string& description, float credit): Course(course_code, level, description, credit){
+ErthCourse::ErthCourse(string course_code, int level, const string& description, float credit, Program *p, ErthCourse *pre): Course(course_code, level, description, credit){
+    this->pre_requisite = pre;
+    this->associate_program = p;
+}
     
+ErthCourse::~ErthCourse(){
+    delete pre_requisite;
+    delete associate_program;
+}
+
+
+bool ErthCourse::can_enroll(Student *s){
+    return true;
+}
+
+void ErthCourse::enroll(Student *s){
+    
+}
+
+void ErthCourse::print(){
+    cout << format("Course: {}, Level: {}, Description: {}\n", this->course_code, this->level, this->description);
 }

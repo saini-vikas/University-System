@@ -35,6 +35,7 @@ public:
     void set_age(int age);
     void set_program(Program *p);
     void add_courses(Course *c);
+    void eligible_to_graduate();
     void print();
     
 private:

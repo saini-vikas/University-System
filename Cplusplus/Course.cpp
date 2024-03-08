@@ -15,6 +15,10 @@ Course::Course(string course_code, int level, const string& description, float c
     this->enrolled_students = new set<Student *>;
 }
 
+Course::~Course(){
+
+}
+
 // this copy constructor will perform deep copy of course
 Course::Course(const Course* c): course_code(c->course_code), level(c->level), credit(c->credit){
     this->description = c->description;
@@ -28,9 +32,7 @@ Course::Course(const Course* c): course_code(c->course_code), level(c->level), c
 float Course::get_credit(){
     return this->credit;
 }
-Course::~Course(){
-    delete enrolled_students;
-}
+
 
 void Course::set_grade(float g){
     this->grade = g;

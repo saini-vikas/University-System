@@ -25,6 +25,9 @@ Student::~Student(){
     delete this->my_courses;
 }
 
+void Student::eligible_to_graduate(){
+    
+}
 
 string Student::get_name(){
     return this->name;

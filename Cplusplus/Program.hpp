@@ -32,6 +32,7 @@ private:
     const string name;
     int capacity;
     const string program_code;
+    float credit_needed;
     set<Course *> *mandatory_courses;
     set<Student *> *students;
 };

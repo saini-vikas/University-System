@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75E156082B99367200AFD335 /* ErthCourse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155D62B992D7000AFD335 /* ErthCourse.cpp */; };
-		75E156092B99367200AFD335 /* HlthCourse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155D72B992D7000AFD335 /* HlthCourse.cpp */; };
-		75E1560A2B99367200AFD335 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155D92B992D7000AFD335 /* Program.cpp */; };
-		75E1560C2B99367200AFD335 /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B12B990D8300AFD335 /* Course.cpp */; };
-		75E1560D2B99367200AFD335 /* Elective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B62B990D8300AFD335 /* Elective.cpp */; };
-		75E1560E2B99367200AFD335 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B32B990D8300AFD335 /* Student.cpp */; };
-		75E1560F2B99367200AFD335 /* University.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B92B990D8300AFD335 /* University.cpp */; };
-		75E156102B99367200AFD335 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 752CE4F62B93AE2900928816 /* main.cpp */; };
-		75E156112B99392500AFD335 /* CompCourse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B22B990D8300AFD335 /* CompCourse.cpp */; };
+		755875DB2B9AA84100D6CCFB /* Elective.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E156152B99534A00AFD335 /* Elective.hpp */; };
+		755875DC2B9AA84100D6CCFB /* ErthCourse.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E156192B99534B00AFD335 /* ErthCourse.hpp */; };
+		755875DD2B9AA84100D6CCFB /* HlthCourse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E156162B99534A00AFD335 /* HlthCourse.cpp */; };
+		755875DE2B9AA84100D6CCFB /* HlthCourse.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E1561E2B99534B00AFD335 /* HlthCourse.hpp */; };
+		755875DF2B9AA84100D6CCFB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E156182B99534A00AFD335 /* main.cpp */; };
+		755875E02B9AA84100D6CCFB /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E1561D2B99534B00AFD335 /* Program.cpp */; };
+		755875E12B9AA84100D6CCFB /* Program.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E156172B99534A00AFD335 /* Program.hpp */; };
+		755875E22B9AA84100D6CCFB /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E1561A2B99534B00AFD335 /* Student.cpp */; };
+		755875E32B9AA84100D6CCFB /* Student.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E1561B2B99534B00AFD335 /* Student.hpp */; };
+		755875E42B9AA84100D6CCFB /* University.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E1561F2B99534B00AFD335 /* University.cpp */; };
+		755875E52B9AA84100D6CCFB /* University.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E1561C2B99534B00AFD335 /* University.hpp */; };
+		755875E62B9AA84100D6CCFB /* ErthCourse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155D62B992D7000AFD335 /* ErthCourse.cpp */; };
+		755875E72B9AA84100D6CCFB /* ErthCourse.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155D52B992D7000AFD335 /* ErthCourse.hpp */; };
+		755875E82B9AA84100D6CCFB /* HlthCourse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155D72B992D7000AFD335 /* HlthCourse.cpp */; };
+		755875E92B9AA84100D6CCFB /* HlthCourse.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155DB2B992D7000AFD335 /* HlthCourse.hpp */; };
+		755875EA2B9AA84100D6CCFB /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155D92B992D7000AFD335 /* Program.cpp */; };
+		755875EB2B9AA84100D6CCFB /* Program.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155D42B992D6F00AFD335 /* Program.hpp */; };
+		755875EC2B9AA84100D6CCFB /* CompCourse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B22B990D8300AFD335 /* CompCourse.cpp */; };
+		755875ED2B9AA84100D6CCFB /* CompCourse.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B82B990D8300AFD335 /* CompCourse.hpp */; };
+		755875EE2B9AA84100D6CCFB /* Course.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B42B990D8300AFD335 /* Course.hpp */; };
+		755875EF2B9AA84100D6CCFB /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B12B990D8300AFD335 /* Course.cpp */; };
+		755875F02B9AA84100D6CCFB /* Elective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B62B990D8300AFD335 /* Elective.cpp */; };
+		755875F12B9AA84100D6CCFB /* Elective.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155ED2B99312900AFD335 /* Elective.hpp */; };
+		755875F22B9AA84100D6CCFB /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B32B990D8300AFD335 /* Student.cpp */; };
+		755875F32B9AA84100D6CCFB /* Student.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B72B990D8300AFD335 /* Student.hpp */; };
+		755875F42B9AA84100D6CCFB /* University.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155B92B990D8300AFD335 /* University.cpp */; };
+		755875F52B9AA84100D6CCFB /* University.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 75E155BA2B990D8300AFD335 /* University.hpp */; };
+		755875F62B9AA84100D6CCFB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 752CE4F62B93AE2900928816 /* main.cpp */; };
+		755875F72B9AA84100D6CCFB /* Cplusplus in Sources */ = {isa = PBXBuildFile; fileRef = 752CE4F32B93AE2900928816 /* Cplusplus */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +69,17 @@
 		75E155D92B992D7000AFD335 /* Program.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Program.cpp; path = Cplusplus/Program.cpp; sourceTree = "<group>"; };
 		75E155DB2B992D7000AFD335 /* HlthCourse.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HlthCourse.hpp; path = Cplusplus/HlthCourse.hpp; sourceTree = "<group>"; };
 		75E155ED2B99312900AFD335 /* Elective.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Elective.hpp; path = Cplusplus/Elective.hpp; sourceTree = "<group>"; };
+		75E156152B99534A00AFD335 /* Elective.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Elective.hpp; path = Cplusplus/Elective.hpp; sourceTree = "<group>"; };
+		75E156162B99534A00AFD335 /* HlthCourse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HlthCourse.cpp; path = Cplusplus/HlthCourse.cpp; sourceTree = "<group>"; };
+		75E156172B99534A00AFD335 /* Program.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Program.hpp; path = Cplusplus/Program.hpp; sourceTree = "<group>"; };
+		75E156182B99534A00AFD335 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Cplusplus/main.cpp; sourceTree = "<group>"; };
+		75E156192B99534B00AFD335 /* ErthCourse.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ErthCourse.hpp; path = Cplusplus/ErthCourse.hpp; sourceTree = "<group>"; };
+		75E1561A2B99534B00AFD335 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Student.cpp; path = Cplusplus/Student.cpp; sourceTree = "<group>"; };
+		75E1561B2B99534B00AFD335 /* Student.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Student.hpp; path = Cplusplus/Student.hpp; sourceTree = "<group>"; };
+		75E1561C2B99534B00AFD335 /* University.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = University.hpp; path = Cplusplus/University.hpp; sourceTree = "<group>"; };
+		75E1561D2B99534B00AFD335 /* Program.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Program.cpp; path = Cplusplus/Program.cpp; sourceTree = "<group>"; };
+		75E1561E2B99534B00AFD335 /* HlthCourse.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HlthCourse.hpp; path = Cplusplus/HlthCourse.hpp; sourceTree = "<group>"; };
+		75E1561F2B99534B00AFD335 /* University.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = University.cpp; path = Cplusplus/University.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +96,17 @@
 		752CE4EA2B93AE2900928816 = {
 			isa = PBXGroup;
 			children = (
+				75E156152B99534A00AFD335 /* Elective.hpp */,
+				75E156192B99534B00AFD335 /* ErthCourse.hpp */,
+				75E156162B99534A00AFD335 /* HlthCourse.cpp */,
+				75E1561E2B99534B00AFD335 /* HlthCourse.hpp */,
+				75E156182B99534A00AFD335 /* main.cpp */,
+				75E1561D2B99534B00AFD335 /* Program.cpp */,
+				75E156172B99534A00AFD335 /* Program.hpp */,
+				75E1561A2B99534B00AFD335 /* Student.cpp */,
+				75E1561B2B99534B00AFD335 /* Student.hpp */,
+				75E1561F2B99534B00AFD335 /* University.cpp */,
+				75E1561C2B99534B00AFD335 /* University.hpp */,
 				75E155D62B992D7000AFD335 /* ErthCourse.cpp */,
 				75E155D52B992D7000AFD335 /* ErthCourse.hpp */,
 				75E155D72B992D7000AFD335 /* HlthCourse.cpp */,
@@ -73,8 +115,8 @@
 				75E155D42B992D6F00AFD335 /* Program.hpp */,
 				75E155B22B990D8300AFD335 /* CompCourse.cpp */,
 				75E155B82B990D8300AFD335 /* CompCourse.hpp */,
-				75E155B12B990D8300AFD335 /* Course.cpp */,
 				75E155B42B990D8300AFD335 /* Course.hpp */,
+				75E155B12B990D8300AFD335 /* Course.cpp */,
 				75E155B62B990D8300AFD335 /* Elective.cpp */,
 				75E155ED2B99312900AFD335 /* Elective.hpp */,
 				75E155B32B990D8300AFD335 /* Student.cpp */,
@@ -159,15 +201,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E156112B99392500AFD335 /* CompCourse.cpp in Sources */,
-				75E156082B99367200AFD335 /* ErthCourse.cpp in Sources */,
-				75E156092B99367200AFD335 /* HlthCourse.cpp in Sources */,
-				75E1560A2B99367200AFD335 /* Program.cpp in Sources */,
-				75E1560C2B99367200AFD335 /* Course.cpp in Sources */,
-				75E1560D2B99367200AFD335 /* Elective.cpp in Sources */,
-				75E1560E2B99367200AFD335 /* Student.cpp in Sources */,
-				75E1560F2B99367200AFD335 /* University.cpp in Sources */,
-				75E156102B99367200AFD335 /* main.cpp in Sources */,
+				755875DB2B9AA84100D6CCFB /* Elective.hpp in Sources */,
+				755875DC2B9AA84100D6CCFB /* ErthCourse.hpp in Sources */,
+				755875DD2B9AA84100D6CCFB /* HlthCourse.cpp in Sources */,
+				755875DE2B9AA84100D6CCFB /* HlthCourse.hpp in Sources */,
+				755875DF2B9AA84100D6CCFB /* main.cpp in Sources */,
+				755875E02B9AA84100D6CCFB /* Program.cpp in Sources */,
+				755875E12B9AA84100D6CCFB /* Program.hpp in Sources */,
+				755875E22B9AA84100D6CCFB /* Student.cpp in Sources */,
+				755875E32B9AA84100D6CCFB /* Student.hpp in Sources */,
+				755875E42B9AA84100D6CCFB /* University.cpp in Sources */,
+				755875E52B9AA84100D6CCFB /* University.hpp in Sources */,
+				755875E62B9AA84100D6CCFB /* ErthCourse.cpp in Sources */,
+				755875E72B9AA84100D6CCFB /* ErthCourse.hpp in Sources */,
+				755875E82B9AA84100D6CCFB /* HlthCourse.cpp in Sources */,
+				755875E92B9AA84100D6CCFB /* HlthCourse.hpp in Sources */,
+				755875EA2B9AA84100D6CCFB /* Program.cpp in Sources */,
+				755875EB2B9AA84100D6CCFB /* Program.hpp in Sources */,
+				755875EC2B9AA84100D6CCFB /* CompCourse.cpp in Sources */,
+				755875ED2B9AA84100D6CCFB /* CompCourse.hpp in Sources */,
+				755875EE2B9AA84100D6CCFB /* Course.hpp in Sources */,
+				755875EF2B9AA84100D6CCFB /* Course.cpp in Sources */,
+				755875F02B9AA84100D6CCFB /* Elective.cpp in Sources */,
+				755875F12B9AA84100D6CCFB /* Elective.hpp in Sources */,
+				755875F22B9AA84100D6CCFB /* Student.cpp in Sources */,
+				755875F32B9AA84100D6CCFB /* Student.hpp in Sources */,
+				755875F42B9AA84100D6CCFB /* University.cpp in Sources */,
+				755875F52B9AA84100D6CCFB /* University.hpp in Sources */,
+				755875F62B9AA84100D6CCFB /* main.cpp in Sources */,
+				755875F72B9AA84100D6CCFB /* Cplusplus in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +293,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
