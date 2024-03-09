@@ -29,6 +29,7 @@ public:
     float get_major_credit();
     void set_capacity(int n);
     void add_student(Student *s);
+    void add_course(Course *c);
     void print();
     
 private:

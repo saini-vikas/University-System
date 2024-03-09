@@ -59,6 +59,10 @@ void Program::add_student(Student *s){
     
 }
 
+void Program::add_course(Course *c){
+    this->mandatory_courses->insert(c);
+}
+
 void Program::print(){
     cout << "\tProgram: " << this->name << ", Code: " << this->program_code << ", Capacity: " << this->capacity << ", Credit Needed: " << this->total_credit_needed << endl;
     

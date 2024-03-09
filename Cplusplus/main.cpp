@@ -80,6 +80,22 @@ int main(int argc, const char * argv[]) {
     Elective *film1100 = new Elective("FILM1009", 1, "Intro to Film Studies", 1.0);
     Elective *laws1001 = new Elective("LAWS1009", 1, "Intro to Legal Studies", 1.0);
     
+    computer_science->add_course(comp1405);
+    computer_science->add_course(comp1406);
+    computer_science->add_course(comp1805);
+    computer_science->add_course(comp2401);
+    computer_science->add_course(comp2402);
+    computer_science->add_course(comp2406);
+    computer_science->add_course(comp2404);
+    computer_science->add_course(comp3000);
+    computer_science->add_course(comp3004);
+    computer_science->add_course(comp3008);
+    computer_science->add_course(comp2804);
+    computer_science->add_course(comp3804);
+    computer_science->add_course(comp4107);
+    
+    
+    
     car->add_program(computer_science);
     car->add_program(health_science);
     car->add_program(earth_science);
