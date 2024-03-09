@@ -94,7 +94,29 @@ int main(int argc, const char * argv[]) {
     computer_science->add_course(comp3804);
     computer_science->add_course(comp4107);
     
+    earth_science->add_course(erth1006);
+    earth_science->add_course(erth1009);
+    earth_science->add_course(erth2102);
+    earth_science->add_course(erth2104);
+    earth_science->add_course(erth2105);
+    earth_science->add_course(erth2406);
+    earth_science->add_course(erth3003);
+    earth_science->add_course(erth3203);
+    earth_science->add_course(erth3205);
+    earth_science->add_course(erth3406);
     
+    health_science->add_course(hlth1000);
+    health_science->add_course(hlth1002);
+    health_science->add_course(hlth2001);
+    health_science->add_course(hlth2002);
+    health_science->add_course(hlth2003);
+    health_science->add_course(hlth3101);
+    health_science->add_course(hlth3102);
+    health_science->add_course(hlth3103);
+    health_science->add_course(hlth3404);
+    health_science->add_course(hlth1002);
+    health_science->add_course(hlth1002);
+  
     
     car->add_program(computer_science);
     car->add_program(health_science);
