@@ -163,6 +163,10 @@ int main(int argc, const char * argv[]) {
     earth_science->add_student(s8);
     earth_science->add_student(s10);
     car->print();
+    cout << "Students: " << car->get_Student()->size() << endl;
+    for (const auto& stu: *car->get_Student()){
+        stu->print();
+    }
    
     
     return 0;

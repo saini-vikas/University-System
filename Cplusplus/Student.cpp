@@ -31,12 +31,11 @@ Student::~Student(){
 void Student::eligible_to_graduate(){
     if (this->get_major_credit() >= this->my_program->get_major_credit() && this->get_elective_credit() >= this->my_program->get_elective_credit() && !this->is_graduated){
         this->is_graduated = true;
-        cout << "Student name: " << this->name << " is eligible to graduate from " << this->my_program->get_program_name() << endl;
-        cout << "Credit Completed: " << this->get_elective_credit() + this->get_major_credit() << endl;
+        cout << "\t\tEligible to graduate from " << this->my_program->get_program_name() << ". Credit Completed: " << this->get_elective_credit() + this->get_major_credit() << endl;
     }else{
-        cout << "Student name: " << this->name << " is NOT eligible to graduate." << endl;
-        cout << "Major Credit needed: " << this->my_program->get_major_credit() - this->current_major_credit << endl;
-        cout << "Elective Credit needed: " << this->my_program->get_elective_credit() - this->current_elective_credit << endl;
+        cout << "\t\tNOT eligible to graduate." <<
+         " Major Credit needed: " << this->my_program->get_major_credit() - this->current_major_credit <<
+         ", Elective Credit needed: " << this->my_program->get_elective_credit() - this->current_elective_credit << endl;
     }
 }
 
@@ -93,5 +92,10 @@ void Student::add_courses(Course *c){
 
 
 void Student::print(){
-    cout << format("\tName: {}, Age: {}, Program: {}, GPA: {:0.2f}\n", this->name, this->age, this->my_program->get_program_name(), this->GPA);
+    cout << format("\n\tName: {}, Age: {}, Program: {}, GPA: {:0.2f}\n", this->name, this->age, this->my_program->get_program_name(), this->GPA);
+    this->eligible_to_graduate();
+    cout << "\t\t\tEnrolled Courses: " << this->get_courses()->size() << endl;
+    for (const auto& course: *this->my_courses){
+        course->print();
+    }
 }

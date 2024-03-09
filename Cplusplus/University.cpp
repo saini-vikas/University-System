@@ -44,10 +44,6 @@ void University::admit_student(Student* stu){
 }
 void University::print(){
     std::cout << "University name: " << this->name << " Address: " <<this->address << endl;
-    cout << "Student: " << this->all_students->size() << endl;
-    for (const auto& student: *all_students){
-        student->print();
-    }
     cout << "Programs: " << this->all_programs->size() << endl;
     for (const auto& program: *all_programs){
         program->print();
