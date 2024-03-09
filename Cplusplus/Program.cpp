@@ -65,5 +65,8 @@ void Program::add_course(Course *c){
 
 void Program::print(){
     cout << "\tProgram: " << this->name << ", Code: " << this->program_code << ", Capacity: " << this->capacity << ", Credit Needed: " << this->total_credit_needed << endl;
+    for (const auto& course: *this->mandatory_courses){
+        cout << "\t\tCourse: " << course->get_course_code() << " - " << ", Description: " << course->get_description() << endl;
+    }
     
 }

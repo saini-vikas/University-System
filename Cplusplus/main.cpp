@@ -92,7 +92,13 @@ int main(int argc, const char * argv[]) {
     computer_science->add_course(comp3008);
     computer_science->add_course(comp2804);
     computer_science->add_course(comp3804);
-    computer_science->add_course(comp4107);
+    computer_science->add_course(math1009);
+    computer_science->add_course(busi1800);
+    computer_science->add_course(chem1002);
+    computer_science->add_course(econ1001);
+    computer_science->add_course(cgsc1001);
+    computer_science->add_course(film1100);
+    computer_science->add_course(laws1001);
     
     earth_science->add_course(erth1006);
     earth_science->add_course(erth1009);
@@ -104,6 +110,13 @@ int main(int argc, const char * argv[]) {
     earth_science->add_course(erth3203);
     earth_science->add_course(erth3205);
     earth_science->add_course(erth3406);
+    earth_science->add_course(math1009);
+    earth_science->add_course(busi1800);
+    earth_science->add_course(chem1002);
+    earth_science->add_course(econ1001);
+    earth_science->add_course(cgsc1001);
+    earth_science->add_course(film1100);
+    earth_science->add_course(laws1001);
     
     health_science->add_course(hlth1000);
     health_science->add_course(hlth1002);
@@ -114,8 +127,16 @@ int main(int argc, const char * argv[]) {
     health_science->add_course(hlth3102);
     health_science->add_course(hlth3103);
     health_science->add_course(hlth3404);
-    health_science->add_course(hlth1002);
-    health_science->add_course(hlth1002);
+    health_science->add_course(hlth3901);
+    health_science->add_course(hlth3902);
+    health_science->add_course(hlth3903);
+    health_science->add_course(math1009);
+    health_science->add_course(busi1800);
+    health_science->add_course(chem1002);
+    health_science->add_course(econ1001);
+    health_science->add_course(cgsc1001);
+    health_science->add_course(film1100);
+    health_science->add_course(laws1001);
   
     
     car->add_program(computer_science);
