@@ -137,8 +137,7 @@ int main(int argc, const char * argv[]) {
     health_science->add_course(cgsc1001);
     health_science->add_course(film1100);
     health_science->add_course(laws1001);
-  
-    
+    // Adding Program ans students to university
     car->add_program(computer_science);
     car->add_program(health_science);
     car->add_program(earth_science);
@@ -152,8 +151,19 @@ int main(int argc, const char * argv[]) {
     car->admit_student(s8);
     car->admit_student(s9);
     car->admit_student(s10);
+    // Adding student to their desire program
+    computer_science->add_student(s1);
+    computer_science->add_student(s2);
+    computer_science->add_student(s3);
+    computer_science->add_student(s4);
+    health_science->add_student(s5);
+    health_science->add_student(s9);
+    computer_science->add_student(s6);
+    computer_science->add_student(s7);
+    earth_science->add_student(s8);
+    earth_science->add_student(s10);
     car->print();
-    comp1405->print();
+   
     
     return 0;
 }

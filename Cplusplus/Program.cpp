@@ -69,9 +69,15 @@ void Program::add_course(Course *c){
 }
 
 void Program::print(){
-    cout << "\tProgram: " << this->name << ", Code: " << this->program_code << ", Capacity: " << this->capacity << ", Credit Needed: " << this->total_credit_needed << endl;
-    for (const auto& course: *this->mandatory_courses){
-        cout << "\t\tCourse: " << course->get_course_code() << ", Level - " << course->get_level() << ", Description: " << course->get_description() << endl;
+    cout << "\t******** Program: " << this->name << ", Code: " << this->program_code << ", Capacity: " << this->capacity << ", Credit Needed: " << this->total_credit_needed << " *******"<< endl;
+    cout << endl;
+    for (const auto& stu: *this->students){
+        cout << "\t\tStudent: " << stu->get_name() << ", Major Credit: " << stu->get_major_credit() << ", Elective Credit: " << stu->get_elective_credit() << endl;
     }
+    cout << endl;
+    for (const auto& course: *this->mandatory_courses){
+        cout << "\t\t\tCourse: " << course->get_course_code() << ", Level - " << course->get_level() << ", Description: " << course->get_description() << endl;
+    }
+    cout << endl;
     
 }
