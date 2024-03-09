@@ -28,6 +28,7 @@ public:
     string& get_description();
     float get_grade();
     float get_credit();
+    int get_level();
     virtual bool can_enroll(Student *s) = 0;
     virtual void enroll(Student *s) = 0;
     virtual void print() = 0;

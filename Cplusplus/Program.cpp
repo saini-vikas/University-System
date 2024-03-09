@@ -56,6 +56,11 @@ void Program::set_capacity(int n){
 
 
 void Program::add_student(Student *s){
+    if (this->name == s->get_program()->get_program_name()){
+        this->students->insert(s);
+    }else{
+        cout << s->get_name() << " cannot be admitted to this course. Choose a different Program." << endl;
+    }
     
 }
 
@@ -66,7 +71,7 @@ void Program::add_course(Course *c){
 void Program::print(){
     cout << "\tProgram: " << this->name << ", Code: " << this->program_code << ", Capacity: " << this->capacity << ", Credit Needed: " << this->total_credit_needed << endl;
     for (const auto& course: *this->mandatory_courses){
-        cout << "\t\tCourse: " << course->get_course_code() << " - " << ", Description: " << course->get_description() << endl;
+        cout << "\t\tCourse: " << course->get_course_code() << ", Level - " << course->get_level() << ", Description: " << course->get_description() << endl;
     }
     
 }

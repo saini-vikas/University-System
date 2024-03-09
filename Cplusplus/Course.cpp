@@ -50,6 +50,10 @@ string Course:: get_course_code(){
     return this->course_code;
 }
 
+int Course::get_level(){
+    return this->level;
+}
+
 
 string& Course::get_description(){
     return this->description;
